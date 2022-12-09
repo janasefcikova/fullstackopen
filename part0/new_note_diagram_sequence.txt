@@ -1,0 +1,21 @@
+title Exercise 0.4 New note diagram
+
+note left of Browser: <form action="/exampleapp/new_note" method="POST">
+Browser->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note right of Server: Form Data "note: "My new note""
+note right of Server: Store note in notes on the Server
+note right of Server : return res.redirect('/notes')
+Server-->Browser: Response status HTTP 302; location: /exampleapp/notes 
+note left of Browser: No response data
+note left of Browser: Reload notes via redirection 
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: notes document
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css file
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js file
+note left of Browser: Executing main.js
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: data.json file
+note right of Server: On handler read, js adds all notes 
+

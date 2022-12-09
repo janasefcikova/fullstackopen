@@ -1,0 +1,14 @@
+title Exercise 0.5 Single page app diagram
+
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Browser: HTML spa document
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css 
+Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+note left of Browser: Browser executes scripts and runs XMLHttpRequest GET request to get data
+Server->Browser: GET /exampleapp/data.json
+Browser-->Server: [{"content":"Juj","date":"2022-12-08T14:53:23.446Z"},...]
+note left of Browser: Browser executes onreadystatechange handler parse data.json and readraw notes
+
+
+

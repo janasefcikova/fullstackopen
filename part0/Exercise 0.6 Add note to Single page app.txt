@@ -1,0 +1,10 @@
+title Exercise 0.6 Add note to Single page app
+
+
+Client->Browser: Type note and save it (submit form)
+note left of Browser: Browser stores notes into global notes variable
+Browser->Browser: redraw notes
+note left of Browser: send same note to server
+Browser->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note right of Server: Server stores the note
+Server-->Browser: {"message":"note created"}
